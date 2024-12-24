@@ -60,7 +60,7 @@
 						
 						
 						<li>
-							<select name="San Antonio" id="dropdown-menu" onchange="redirectTo(this.value)">
+							<select name="San Antonio" id="dropdown-menu" onchange="redirectTo(this.value)" >
                 						<option value="">San Antonio</option>
 						                <option value="#fh5co-gallery">Pics</option>
 						                <option value="#Video">Videos</option>
@@ -68,14 +68,14 @@
 						</li>
 						<li >
 							
-							<select name="Houston" id="dropdown-menu" onchange="redirectTo(this.value)">
+							<select name="Houston" id="dropdown-menu" onchange="redirectTo(this.value)" >
                 						<option value="">Houstan (Nasa)</option>
 						                <option value="#nasa">Pics</option>
 						                <option value="#VideoNasa">Videos</option>
 						            </select>
 						</li>
 						<li>
-							<select name="IFly" id="dropdown-menu" onchange="redirectTo(this.value)">
+							<select name="IFly" id="dropdown-menu" onchange="redirectTo(this.value)" >
                 						<option value="">Indoor Skydiving</option>
 						                <option value="#Ifly">Pics</option>
 						                <option value="#VideoIfly">Videos</option>
@@ -321,7 +321,7 @@
 	</div>
 
 
-	<div id="nasa" class="fh5co-section-gray">
+	<div id="nasa" class="fh5co-section-gray" style="margin-bottom: 40px;>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -903,6 +903,26 @@
 	        }
 	    }
 	</script>
+	<style>
+    /* Style for the dropdown menu */
+    #dropdown-menu {
+        background: transparent; /* Transparent background */
+        color: white;           /* White font color */
+        border: 1px solid white; /* Border in white */
+        padding: 5px;           /* Padding for better appearance */
+        font-size: 16px;        /* Adjust font size */
+        appearance: none;       /* Remove default browser styles */
+        -webkit-appearance: none; /* Safari support */
+        -moz-appearance: none; /* Firefox support */
+        outline: none;          /* Remove focus outline */
+    }
+
+    /* Style for options */
+    #dropdown-menu option {
+        background: black;      /* Background for dropdown options */
+        color: white;           /* Font color for options */
+    }
+</style>
 
 	
 	</body>
